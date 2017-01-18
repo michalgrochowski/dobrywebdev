@@ -63,9 +63,6 @@ a:focus {
     background-color: #535257;
     background-image: linear-gradient(to right, #504e53, #646267, #504e53);
 }
-.social {
-    min-height: 20vh;
-}
 .item {
     border: 1px solid #CDCBD4;
     height: 300px;
@@ -84,20 +81,16 @@ a:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    transition: all .3s ease-in-out;
+    transition: background 0.2s ease;
 }
 .elipsis p {
     display: none;
 }
 .elipsis:hover {
-    background-image: url("../img/elipsis.png");
+    background-image: url("../img/black25.png"), url("../img/elipsis.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.7;
-    transition: all .2s ease-out;
-    text-decoration: none;
-    transform: scale(1.1);
 }
 .elipsis:hover p {
     padding-top: 1em;
@@ -107,11 +100,13 @@ a:focus {
     text-align: center;
     font-size: 2em;
     text-decoration: none;
-    opacity: 1;
 }
 .box {
     background-image: url("../img/black50.png");
     border-radius: 2em;
+}
+.social-text {
+    color: #edeff2;
 }
 @media screen and (max-width: 767px) {
     .intro-section {
@@ -147,6 +142,8 @@ a:focus {
     margin-top: 15%;}
     .p-buffer {
     margin-top: 7%;}
+    .socials {
+    margin-left: 3%;}
 }
 
 @media (min-width: 980px) {
@@ -167,6 +164,8 @@ a:focus {
     padding: 10% 0 10% 0;}
     .minus {
     margin-top: -10%;}
+    .left-buffer {
+    margin-left: 5%;}
 }
 
 @media (min-width: 1200px) {
@@ -186,6 +185,7 @@ a:focus {
     .contact-section {
     padding: 10% 0 15% 0;}
 }
+
 
 
 

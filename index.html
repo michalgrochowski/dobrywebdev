@@ -116,7 +116,6 @@
                 <p>Flexbox</p>
                 <p>Fixed heights and widths</p>
             </a>
-            <div class="item">3</div>
             <div class="item">4</div>
             <div class="item">5</div>
             <div class="item">6</div>
@@ -137,52 +136,61 @@
             <h2>Skontaktuj się ze mną</h2>
             </div>
             <div class="col-xs-12 col-md-offset-2 col-md-8">
-            <p class="text-center p-buffer">Wybierz jedną z opcji kontaktu poniżej. Staram się odpowiadać na wszystkie wiadomości możliwie jak najszybciej.</p>
+            <p class="text-center p-buffer">Wybierz jedną z opcji kontaktu poniżej. Staram się odpowiadać na wszystkie wiadomości jak najszybciej.</p>
             </div>      
         </div>
     </div>
     <div class="container-fluid">   
         <div class="row top-buffer">
-            <div class="col-xs-6 col-md-4 col-md-offset-2 social">
-            <a href="tel:509581510">
-            <i class="icon-phone"></i>
-            </a>
-            <h3>Zadzwoń</h3>
-            </div>   
-            <div class="col-xs-6 col-md-4 social">
-            <a href="mailto:mic.grochowski@gmail.com">
-            <i class="icon-mail-alt"></i>
-	        </a>
-            <h3>Napisz maila</h3>
+            <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
+                <p class="text-center p-buffer">Wypełnij poniższy formularz:</p>
+                <form>
+                    <div class="form-group">
+                        <label for="InputEmail">Adres e-mail</label>
+                        <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputName">Imię i nazwisko</label>
+                        <input type="name" class="form-control" id="InputName" placeholder="Imię i nazwisko">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputText">Treść wiadomości</label>
+                        <textarea id="InputText" class="form-control" rows="5" placeholder="Wiadomość"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Wyślij</button>
+               </form>
             </div>  
-        </div>
-        <div class="row">
-            <div class="col-xs-6 col-md-2 col-md-offset-2 social">
-            <a href="http://www.facebook.com/dobrywebdev" target="_blank">
-            <i class="icon-facebook-official"></i>
-            </a>
-            <h3>Facebook</h3>
-            </div> 
-            <div class="col-xs-6 col-md-2 social">
-            <a href="https://www.linkedin.com/in/michał-grochowski-962a45131" target="_blank">
-            <i class="icon-linkedin-squared"></i>
-            </a>
-            <h3>LinkedIn</h3>
-            </div>  
-            <div class="col-xs-6 col-md-2 social">
-            <a href="https://twitter.com/dobrywebdev" target="_blank">
-            <i class="icon-twitter"></i>
-            </a>
-            <h3>Twitter</h3>
-            </div> 
-            <div class="col-xs-6 col-md-2 social">
-            <a href="https://github.com/michalgrochowski" target="_blank">
-            <i class="icon-git"></i>
-            </a>
-            <h3>GitHub</h3>
-            </div> 
-        </div>
-    </div>    
+            <div class="col-xs-12 col-md-5 left-buffer">
+                <p class="text-center p-buffer">Lub kliknij jeden z poniższych przycisków:</p>
+                <div class="row top-buffer">
+                <a class="col-xs-6 col-md-4" href="tel:509581510">
+                <i class="icon-phone"></i>
+                <h3 class="social-text">Zadzwoń</h3>
+                </a>
+                <a class="col-xs-6 col-md-4" href="mailto:mic.grochowski@gmail.com">
+                <i class="icon-mail-alt"></i>
+                <h3 class="social-text">Napisz</h3>
+                </a>
+                <a class="col-xs-6 col-md-4" href="https://www.linkedin.com/in/michał-grochowski-962a45131" target="_blank">
+                <i class="icon-linkedin-squared"></i>
+                <h3 class="social-text">LinkedIn</h3>
+                </a>
+                <a class="col-xs-6 col-md-4" href="http://www.facebook.com/dobrywebdev" target="_blank">
+                <i class="icon-facebook-official"></i>
+                <h3 class="social-text">Facebook</h3>
+                </a>
+                <a class="col-xs-6 col-md-4" href="https://twitter.com/dobrywebdev" target="_blank">
+                <i class="icon-twitter"></i>
+                <h3 class="social-text">Twitter</h3>
+                </a>
+                <a class="col-xs-6 col-md-4" href="https://github.com/michalgrochowski" target="_blank">
+                <i class="icon-git"></i>
+                <h3 class="social-text">GitHub</h3>
+                </a>
+                </div>
+            </div>
+        </div> 
+    </div> 
 </section>   
 <!-- Koniec czwartej sekcji -->
 </main>

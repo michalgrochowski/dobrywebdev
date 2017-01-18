@@ -21,7 +21,7 @@ a {
 a:hover,
 a:focus {
   color: #333;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .intro-section {
     height: 100%;
@@ -87,7 +87,7 @@ a:focus {
     display: none;
 }
 .elipsis:hover {
-    background-image: url("../img/black25.png"), url("../img/elipsis.png");
+    background-image: url("../img/black50.png"), url("../img/elipsis.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -95,7 +95,33 @@ a:focus {
 .elipsis:hover p {
     padding-top: 1em;
     line-height: 1.5em;
-    color: #111;
+    color: #edeff2;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+}
+.agency {
+    display: block;
+    background-image: url("../img/agency.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background 0.2s ease;
+}
+.agency p {
+    display: none;
+}
+.agency:hover {
+    background-image: url("../img/black50.png"), url("../img/agency.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.agency:hover p {
+    padding-top: 1em;
+    line-height: 1.5em;
+    color: #edeff2;
     display: block;
     text-align: center;
     font-size: 2em;

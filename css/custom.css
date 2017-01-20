@@ -56,6 +56,9 @@ a:focus {
     background-position: center;
     background-attachment: fixed;
 }
+.portfolio-section a{
+    color: #edeff2;
+}
 .contact-section {
     height: 100%;
     text-align: center;
@@ -118,10 +121,22 @@ a:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    transition: background 0.2s ease;
 }
 .agency:hover {
     background-image: url("../img/black50.png"), url("../img/agency.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dobrywebdev {
+    display: block;
+    background-image: url("../img/dobrywebdev.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dobrywebdev:hover {
+    background-image: url("../img/black50.png"), url("../img/dobrywebdev.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

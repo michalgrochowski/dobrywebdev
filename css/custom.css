@@ -148,14 +148,15 @@ a:focus {
 .social-text {
     color: #edeff2;
 }
-.flag {
-    height: 35%;
-    width: 35%;
-    display: inline-block;
-}
 .lang {
     margin-right: -25px;
 }
+.flag {
+    height: 50px;
+    width: auto;
+    display: inline-block;
+}
+
 @media screen and (max-width: 767px) {
     .intro-section {
     padding: 12% 0 7% 0;}
@@ -172,10 +173,6 @@ a:focus {
     margin-top: 10%;}
     .p-buffer {
     margin-top: 10%;}
-    .flag {
-    height: 10%;
-    width: 10%;
-    display: inline-block;}
 }
 
 @media (min-width: 768px) {

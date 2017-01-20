@@ -75,31 +75,42 @@ a:focus {
     background-color: #444;
     color: #CDCBD4; 
 }
+.item p {
+    display: none;
+}
+.item h4 {
+    display: none;
+}
+.item:hover p {
+    display: block;
+    padding-top: 0.5em;
+    line-height: 1em;
+    color: #edeff2;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.item:hover h4 {
+    display: block;
+    padding-top: 1em;
+    line-height: 1em;
+    color: #edeff2;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+}
 .elipsis {
     display: block;
     background-image: url("../img/elipsis.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    transition: background 0.2s ease;
-}
-.elipsis p {
-    display: none;
 }
 .elipsis:hover {
     background-image: url("../img/black50.png"), url("../img/elipsis.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-.elipsis:hover p {
-    padding-top: 1em;
-    line-height: 1.5em;
-    color: #edeff2;
-    display: block;
-    text-align: center;
-    font-size: 2em;
-    text-decoration: none;
 }
 .agency {
     display: block;
@@ -109,23 +120,11 @@ a:focus {
     background-position: center;
     transition: background 0.2s ease;
 }
-.agency p {
-    display: none;
-}
 .agency:hover {
     background-image: url("../img/black50.png"), url("../img/agency.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-.agency:hover p {
-    padding-top: 1em;
-    line-height: 1.5em;
-    color: #edeff2;
-    display: block;
-    text-align: center;
-    font-size: 2em;
-    text-decoration: none;
 }
 .box {
     background-image: url("../img/black50.png");
@@ -133,6 +132,14 @@ a:focus {
 }
 .social-text {
     color: #edeff2;
+}
+.flag {
+    height: 35%;
+    width: 35%;
+    display: inline-block;
+}
+.lang {
+    margin-right: -25px;
 }
 @media screen and (max-width: 767px) {
     .intro-section {
@@ -150,6 +157,10 @@ a:focus {
     margin-top: 10%;}
     .p-buffer {
     margin-top: 10%;}
+    .flag {
+    height: 10%;
+    width: 10%;
+    display: inline-block;}
 }
 
 @media (min-width: 768px) {

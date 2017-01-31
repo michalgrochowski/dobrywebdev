@@ -51,7 +51,7 @@
     <div class="container-fluid">
         <div class="row top-buffer">
             <div class="col-xs-12 col-md-offset-2 col-md-8 box">
-                <h2 class="non-transparent">Witaj na stronie internetowej dobrywebdev.pl</h2>
+                <h2>Witaj na stronie internetowej dobrywebdev.pl</h2>
                 <h4 class="p-buffer">Jest to moja pierwsza strona i jednocześnie miejsce, w którym zamieszczam wszystkie swoje projekty.</h4>
                 <p class="p-buffer">Jeśli chcesz dowiedzieć się o mnie więcej, przejdź do zakładki "O mnie", a jeśli interesują Cię moje poprzednie projekty, wybierz zakładkę "Portfolio". W przypadku kiedy spodobało Ci się to co tworzę i masz dla mnie zlecenie, przejdź do zakładki "Kontakt" - z chęcią odpowiem na wszystkie pytania i mam nadzieję, że zdecydujesz się na wpółpracę właśnie ze mną.</p>
                 <p class="p-buffer">Dobrywebdev.pl został stworzony przy pomocy <a href="http://getbootstrap.com/" target="_blank">Bootstrapa</a>, zmodyfikowanego pluginu <a href="https://startbootstrap.com/template-overviews/scrolling-nav/" target="_blank">ScrollingNav</a> oraz <a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">Owl Carousel 2.0</a> zachowując standardy HTML5 i CSS3.</p>
@@ -112,7 +112,7 @@
                 <p>Własny projekt</p>
                 <p>Framework/CSS: Boostrap 3.3.7</p>
                 <p>Responsywność: pełna</p>
-                <p>JavaScript: gotowe pluginy</p>
+                <p>JavaScript: OwlCarousel + ScrollingNav</p>
             </a>
             <a class="item elipsis" href ="https://michalgrochowski.github.io/elipsis---flex/" target="_blank">
                 <h4>Elipsis PSD</h4>
@@ -156,20 +156,20 @@
         <div class="row top-buffer">
             <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
                 <p class="text-center p-buffer">Wypełnij poniższy formularz:</p>
-                <form>
+                <form action="formularz.php" method="POST">
                     <div class="form-group">
                         <label for="InputEmail">Adres e-mail</label>
-                        <input type="email" class="form-control" id="InputEmail" placeholder="E-mail">
+                        <input type="email" class="form-control" id="InputEmail" placeholder="E-mail" name="email">
                     </div>
                     <div class="form-group">
                         <label for="InputName">Imię i nazwisko</label>
-                        <input type="name" class="form-control" id="InputName" placeholder="Imię i nazwisko">
+                        <input type="name" class="form-control" id="InputName" placeholder="Imię i nazwisko" name="name">
                     </div>
                     <div class="form-group">
                         <label for="InputText">Treść wiadomości</label>
-                        <textarea id="InputText" class="form-control" rows="5" placeholder="Wiadomość"></textarea>
+                        <textarea id="InputText" class="form-control" rows="5" placeholder="Wiadomość" name="message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-default">Wyślij</button>
+                    <input type="submit" class="btn btn-default" value="Wyślij" name="submit">
                </form>
             </div>  
             <div class="col-xs-12 col-md-5 left-buffer">

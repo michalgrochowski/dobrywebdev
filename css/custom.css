@@ -66,6 +66,12 @@ a:focus {
     background-color: #535257;
     background-image: linear-gradient(to right, #504e53, #646267, #504e53);
 }
+.post-form {
+    height: 100%;
+    text-align: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #504e53, #646267, #504e53);
+}
 .item {
     border: 1px solid #CDCBD4;
     height: 300px;
@@ -156,7 +162,14 @@ a:focus {
     width: auto;
     display: inline-block;
 }
-
+.homepage {
+    background-color: #333;
+    color: #edeff2;
+}
+.homepage:hover {
+    background-color: #444;
+    color: #edeff2;
+}
 @media screen and (max-width: 767px) {
     .intro-section {
     padding: 12% 0 7% 0;}

@@ -1,13 +1,14 @@
+//-- ScrollingNav
 $(document).ready(function () {
     $(window).on('scroll', function(){
         $('#bs-example-navbar-collapse-1').collapse('hide')
     });
 });
-
+//-- OwlCarousel init
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel();
 });
-
+//-- OwlCarousel setup
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,

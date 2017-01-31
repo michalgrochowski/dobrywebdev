@@ -104,7 +104,7 @@
                 <p>My own project</p>
                 <p>Framework/CSS: Boostrap 3.3.7</p>
                 <p>Responsive: full</p>
-                <p>JavaScript: premade plugins</p>
+                <p>JavaScript: OwlCarousel + ScrollingNav</p>
             </a>
             <a class="item elipsis" href ="https://michalgrochowski.github.io/elipsis---flex/" target="_blank">
                 <h4>Elipsis PSD</h4>
@@ -146,20 +146,20 @@
         <div class="row top-buffer">
             <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
                 <p class="text-center p-buffer">Fill the form below:</p>
-                <form>
+                <form action="formularzeng.php" method="POST">
                     <div class="form-group">
                         <label for="InputEmail">E-mail address</label>
-                        <input type="email" class="form-control" id="InputEmail" placeholder="E-mail">
+                        <input type="email" class="form-control" id="InputEmail" placeholder="E-mail" name="email">
                     </div>
                     <div class="form-group">
                         <label for="InputName">Full name</label>
-                        <input type="name" class="form-control" id="InputName" placeholder="Full name">
+                        <input type="name" class="form-control" id="InputName" placeholder="Full name" name="name">
                     </div>
                     <div class="form-group">
                         <label for="InputText">Message</label>
-                        <textarea id="InputText" class="form-control" rows="5" placeholder="Message"></textarea>
+                        <textarea id="InputText" class="form-control" rows="5" placeholder="Message" name="message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-default">Send</button>
+                    <input type="submit" class="btn btn-default" value="Wyślij" name="submit">
                </form>
             </div>  
             <div class="col-xs-12 col-md-5 left-buffer">

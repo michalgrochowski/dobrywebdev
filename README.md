@@ -7,4 +7,8 @@ Build with:
 - Bootstrap 3.3.7,
 - Scrolling nav - https://startbootstrap.com/template-overviews/scrolling-nav/,
 - OwlCarousel 2.0 - https://owlcarousel2.github.io/OwlCarousel2/,
-- Fontello and Font Mfizz web font icons,
+- Fontello and Font Mfizz web font icons.
+
+Dobrywebdev.pl is constantly evolving as I'm learmning new things.
+
+http://dobrywebdev.pl

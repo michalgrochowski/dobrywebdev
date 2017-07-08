@@ -10,9 +10,11 @@ $(document).ready(function(){
 });
 //-- OwlCarousel setup
 $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
+    loop:false,
+    margin:15,
     nav:true,
+    dots: false,
+    navText: ["Poprzedni", "Następny"],
     responsive:{
         0:{
             items:1
@@ -24,15 +26,30 @@ $('.owl-carousel').owlCarousel({
             items:3
         },
         1200:{
+            items:4
+        },
+        1600:{
             items:5
         }
     }
 })
-//-- Google Analytics
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+// Show and hide Scroll-to-top arrow
+var scrollTop = document.getElementById("scrollTop");
 
-ga('create', 'UA-90010989-1', 'auto');
-ga('send', 'pageview');
+function showOnScroll() {
+    var scrolled = window.scrollY;
+    if (scrolled > window.innerHeight) {
+        scrollTop.classList.add("show");
+        scrollTop.classList.remove("hide");
+    } else {
+        scrollTop.classList.add("hide");
+        scrollTop.classList.remove("show");
+    }
+};
+
+window.addEventListener("scroll", function(){
+    if (window.matchMedia('only screen and (min-width: 767px)').matches) {
+    showOnScroll()};
+});
+
+

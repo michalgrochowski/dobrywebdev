@@ -11,4 +11,4 @@ Build with:
 
 Dobrywebdev.pl is constantly evolving as I'm learmning new things.
 
-http://dobrywebdev.pl
+http://dobrywebdev.pl/old
